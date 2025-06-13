@@ -14,7 +14,7 @@ Este projeto consiste na implementação de uma aplicação do Jogo do Galo dese
 ## Estrutura
 
 - `MainActivity.kt` — ficheiro principal da aplicação
-- `GameViewModel.kt` — lógica do jogo (verificação de jogadas, vencedor, reinício)
+- `viewModel_JogoDoGalo.kt` — lógica do jogo (verificação de jogadas, vencedor, reinício)
 - `GameScreen.kt` — interface do jogo (tabuleiro e botões)
 
 
