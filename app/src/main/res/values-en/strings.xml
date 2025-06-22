@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">gameProject</string>
+    <string name="jogador_atual">Current player: %1$s</string>
+    <string name="empate">Draw!</string>
+    <string name="vencedor">Winner: %1$s</string>
+    <string name="reiniciar_jogo">Reset Game</string>
+</resources>

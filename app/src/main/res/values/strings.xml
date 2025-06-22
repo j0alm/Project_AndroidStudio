@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">gameProject</string>
+    <string name="jogador_atual">Jogador Atual: %1$s</string>
+    <string name="empate">Empate!</string>
+    <string name="vencedor">Vencedor: %1$s</string>
+    <string name="reiniciar_jogo">Reiniciar Jogo</string>
 </resources>

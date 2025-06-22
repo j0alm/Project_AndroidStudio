@@ -17,12 +17,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.gameproject.R
 import com.example.gameproject.viewmodel.GameViewModel
 
 
 @Composable
-fun interfaceJogo(viewModel: GameViewModel){
+fun InterfaceJogo(viewModel: GameViewModel){
     val tabuleiro = viewModel.tabuleiro
     val vencedor = viewModel.vencedor
     val jogador = viewModel.jogadorActual
@@ -34,7 +36,7 @@ fun interfaceJogo(viewModel: GameViewModel){
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        Text(text = "Jogador Atual: $jogador", style = MaterialTheme.typography.titleLarge)
+        Text(text = stringResource(R.string.jogador_atual, jogador) , style = MaterialTheme.typography.titleLarge)
 
         for (linha in 0..2){
             Row {
@@ -67,14 +69,18 @@ fun interfaceJogo(viewModel: GameViewModel){
 
         if (vencedor != null){
             Text(
-                text = if (vencedor == "Empate")  "Empate!" else "Vencedor: $vencedor",
+                text = if (vencedor == "Empate") stringResource(R.string.empate) else stringResource(
+                    R.string.vencedor, vencedor
+                ),
                 style = MaterialTheme.typography.titleLarge
             )
             Button(onClick = { viewModel.resetGame() }) {
-                Text("Reiniciar Jogo")
+                Text(stringResource(R.string.reiniciar_jogo))
             }
         }
 
 
     }
+
+
 }
