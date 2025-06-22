@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.gameproject.ui.theme.GameProjectTheme
-import com.example.gameproject.ui.theme.interfaceJogo
+import com.example.gameproject.ui.theme.InterfaceJogo
 import com.example.gameproject.viewmodel.GameViewModel
 
 class MainActivity : ComponentActivity() {
@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GameProjectTheme {
                 val gameViewModel: GameViewModel = viewModel()
-                interfaceJogo(viewModel = gameViewModel)
+                InterfaceJogo(viewModel = gameViewModel)
             }
         }
     }
