@@ -36,7 +36,7 @@ Este projeto consiste na implementação de uma aplicação do Jogo do Galo dese
    
 2. **Abra o projeto no Android Studio**
    - File > Open > seleciona a pasta clonada
-   - 
+
 3. **Executa a aplicação:**
    - Seleciona um dispositivo virtual (ou um físico ligado via USB)
    - Clica em Run
